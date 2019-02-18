@@ -39,12 +39,14 @@ public class FragmentDown extends Fragment {
         super.onCreate( savedInstanceState );
 
         lstDown = new ArrayList<>();
-        lstDown.add( new Down( R.drawable.pantaloni_tuta_regular ) );
-        lstDown.add( new Down( R.drawable.pantaloni_tuta_slim ) );
-        lstDown.add( new Down( R.drawable.pantaloni_sigaretta_tasconi ) );
-        lstDown.add( new Down( R.drawable.pantaloni_vitaalta_regular ) );
-        lstDown.add( new Down( R.drawable.pantaloni_vitaalta_sigaretta ) );
-        lstDown.add( new Down( R.drawable.pantaloni_vitaalta_zampa ) );
-        lstDown.add( new Down( R.drawable.tubino ) );
+        lstDown.add( new Down( R.drawable.pantaloni_tuta_regular ));
+        lstDown.add( new Down( R.drawable.pantaloni_tuta_slim ));
+        lstDown.add( new Down( R.drawable.pantaloni_sigaretta_tasconi ));
+        lstDown.add( new Down( R.drawable.pantaloni_vitaalta_regular ));
+        lstDown.add( new Down( R.drawable.pantaloni_vitaalta_sigaretta ));
+        lstDown.add( new Down( R.drawable.pantaloni_vitaalta_zampa ));
+        lstDown.add( new Down( R.drawable.tubino ));
+        lstDown.add( new Down( R.drawable.gonna ));
+        lstDown.add( new Down( R.drawable.gonna_orlata ));
     }
 }
