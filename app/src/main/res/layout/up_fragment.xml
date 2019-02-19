@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="COLOR"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="180dp" />
+        android:layout_marginTop="195dp" />
 
     <Spinner
         android:layout_width="match_parent"

@@ -64,7 +64,7 @@ public class FragmentUp extends Fragment {
 
         spinner = (Spinner) uView.findViewById(R.id.upspinner);
         ColorSelectorAdapter adapter = new ColorSelectorAdapter( getActivity(),
-                R.layout.item_up, R.id.textView, rowItems);
+                R.layout.spinner_up, R.id.textView, rowItems);
         spinner.setAdapter( adapter );
         spinner.setOnItemSelectedListener( new AdapterView.OnItemSelectedListener() {
 

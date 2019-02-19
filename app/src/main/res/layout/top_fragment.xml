@@ -9,14 +9,22 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/top_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="180dp">
     </android.support.v7.widget.RecyclerView>
 
     <TextView
-        android:layout_width="72dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="195dp"
         android:layout_marginLeft="10dp"
         android:text="COLOR" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/topspinner">
+    </Spinner>
 
 </RelativeLayout>
