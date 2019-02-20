@@ -97,7 +97,5 @@ public class FragmentTop extends Fragment {
         lstTop.add(new Top(R.drawable.maglione_dolcevita));
         lstTop.add(new Top(R.drawable.pullover));
         lstTop.add(new Top(R.drawable.maglioncino_collo));
-
-
     }
 }

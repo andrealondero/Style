@@ -100,7 +100,7 @@ public class FragmentDown extends Fragment {
 
         spinner = (Spinner) dView.findViewById(R.id.downspinner);
         ColorSelectorAdapter adapter = new ColorSelectorAdapter( getActivity(),
-                R.layout.item_up, R.id.textView, rowItems);
+                R.layout.spinner_up, R.id.textView, rowItems);
         spinner.setAdapter( adapter );
         spinner.setOnItemSelectedListener( new AdapterView.OnItemSelectedListener() {
 

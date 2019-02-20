@@ -10,7 +10,7 @@ public class Main2Activity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    private ViewPagerAdapeterFragment adapeterFragment;
+    private ViewPagerAdapeterFragment adapterFragment;
 
 
     @Override
@@ -20,13 +20,13 @@ public class Main2Activity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         viewPager = (ViewPager) findViewById(R.id.container);
-        adapeterFragment = new ViewPagerAdapeterFragment(getSupportFragmentManager());
+        adapterFragment = new ViewPagerAdapeterFragment(getSupportFragmentManager());
 
-        adapeterFragment.AddFragment(new FragmentTop(), "TOP");
-        adapeterFragment.AddFragment(new FragmentUp(), "UP");
-        adapeterFragment.AddFragment(new FragmentDown(), "DOWN");
-        adapeterFragment.AddFragment(new FragmentDone(), "DONE");
-        viewPager.setAdapter(adapeterFragment);
+        adapterFragment.AddFragment(new FragmentTop(), "TOP");
+        adapterFragment.AddFragment(new FragmentUp(), "UP");
+        adapterFragment.AddFragment(new FragmentDown(), "DOWN");
+        adapterFragment.AddFragment(new FragmentDone(), "DONE");
+        viewPager.setAdapter(adapterFragment);
         tabLayout.setupWithViewPager(viewPager);
 
         tabLayout.getTabAt(0).setIcon(R.drawable.falpa_cappuccio_tascone);

@@ -33,7 +33,6 @@ public class RecyclerViewAdapterUp extends RecyclerView.Adapter<RecyclerViewAdap
     @Override
     public void onBindViewHolder(@NonNull UpViewHolder upViewHolder, int position) {
         upViewHolder.uImageView.setImageResource(uData.get(position).getUpImage());
-
     }
 
     @Override

@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
 
+
+
         final Button button = findViewById( R.id.done );
         final CheckBox checkelegant = findViewById( R.id.elegantaccess );
         final CheckBox checkformal = findViewById( R.id.formalaccess );

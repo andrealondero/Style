@@ -32,7 +32,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int position) {
-
         myViewHolder.imageView.setImageResource(mData.get(position).getModelImage());
     }
 
