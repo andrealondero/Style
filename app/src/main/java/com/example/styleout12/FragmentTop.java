@@ -16,11 +16,24 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.widget.Button;
+import android.widget.LinearLayout;
+
 public class FragmentTop extends Fragment {
 
     View view;
     private RecyclerView myRecyclerView;
     private List<Top> lstTop;
+
+
+
+/*    private BackgroundColorChanger mColor = new BackgroundColorChanger();
+    // Declare our View variables
+    private Button mNext;
+    private LinearLayout mLayout; */
+
+
+
 
     public static final String[] titles = new String[] {"Apricot", "AshGray", "Azure", "Beige", "Black", "Blue", "BlueGray", "BlueJeans",
             "BottleGreen", "Celeste", "Coral", "DarkGreen", "Gold", "Gray", "Green",
@@ -80,6 +93,27 @@ public class FragmentTop extends Fragment {
 
             }
         } );
+
+
+
+/*        // ID
+        mNext = (Button) mNext.findViewById(R.id.color_background_next);
+        mLayout = (LinearLayout) mLayout.findViewById(R.id.provabackground);
+
+        // when next is click then do the following
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int color = mColor.getColor();
+
+                //Update the screen with a color
+                mLayout.setBackgroundColor(color);
+                mNext.setTextColor(color);
+            }
+        };
+        mNext.setOnClickListener(listener); */
+
+
 
         return view;
     }

@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgrey"
+    android:background="@drawable/gradient_violet_white"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="0dp"
         android:fontFamily="sans-serif-medium"
         android:text="SELECT YOUR WAY"
         android:textAlignment="center"
+        android:textColor="@color/backwhite"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <CheckBox
         android:id="@+id/usualaccess"
@@ -31,8 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:button="@drawable/checkusualaccess"
         android:scaleX="0.8"
         android:scaleY="0.8"
@@ -47,8 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
         android:button="@drawable/checkcasualaccess"
         android:scaleX="0.8"
         android:scaleY="0.8"
@@ -63,8 +61,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
         android:button="@drawable/checkformalaccess"
         android:scaleX="0.8"
         android:scaleY="0.8"
@@ -79,8 +77,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
         android:button="@drawable/checkelegantaccess"
         android:scaleX="0.8"
         android:scaleY="0.8"
@@ -96,13 +94,35 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/appendino"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/elegantaccess"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formalaccess"
+        app:srcCompat="@drawable/appendino" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="1dp"
+        android:layout_height="250dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/done"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/done"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/formalaccess"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/appendino" />
+        app:layout_constraintTop_toBottomOf="@+id/usualaccess" />
 
 </android.support.constraint.ConstraintLayout>

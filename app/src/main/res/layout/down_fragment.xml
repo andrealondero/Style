@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@color/backgrey">
+    android:background="@drawable/gradient_red_white">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/down_recyclerview"

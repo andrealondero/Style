@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@color/backgrey">
+    android:background="@drawable/gradient_red_white">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/top_recyclerview"
@@ -89,13 +89,27 @@
         android:layout_marginTop="260dp"
         android:background="?android:attr/listDivider" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="270dp"
-        app:srcCompat="@drawable/ic_cardigan" />
+    <LinearLayout
+        android:id="@+id/provabackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardigan_medio"
+        android:layout_marginTop="320dp"
+        android:scaleX="2"
+        android:scaleY="2"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/color_background_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:translationY="430dp"
+        android:layout_centerHorizontal="true" />
 
 
     <CheckBox
@@ -103,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="510dp"
+        android:layout_marginTop="480dp"
         android:text="ADD" />
 
 </RelativeLayout>
