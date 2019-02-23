@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -26,15 +27,10 @@ public class FragmentTop extends Fragment {
     private RecyclerView myRecyclerView;
     private List<Top> lstTop;
 
-
-
-/*    private BackgroundColorChanger mColor = new BackgroundColorChanger();
+    private BackgroundColorChanger mColor = new BackgroundColorChanger();
     // Declare our View variables
     private Button mNext;
-    private LinearLayout mLayout; */
-
-
-
+    private LinearLayout mLayout;
 
     public static final String[] titles = new String[] {"Apricot", "AshGray", "Azure", "Beige", "Black", "Blue", "BlueGray", "BlueJeans",
             "BottleGreen", "Celeste", "Coral", "DarkGreen", "Gold", "Gray", "Green",
@@ -58,6 +54,9 @@ public class FragmentTop extends Fragment {
     List<RowItem> rowItems;
 
     Spinner fabricSelect;
+
+    ImageView changeImage;
+    Button buttonNext;
 
     public FragmentTop() {
     }
@@ -88,7 +87,6 @@ public class FragmentTop extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 String itemvalue = parent.getItemAtPosition( position ).toString();
-                Toast.makeText( getActivity(), "SELECTED" + itemvalue, Toast.LENGTH_SHORT ).show();
             }
 
             @Override
@@ -127,9 +125,9 @@ public class FragmentTop extends Fragment {
             }
         } );
 
-/*        // ID
+        // ID
         mNext = (Button) view.findViewById(R.id.color_background_next);
-        mLayout = (LinearLayout) mLayout.findViewById(R.id.provabackground);
+        mLayout = (LinearLayout) view.findViewById(R.id.provabackground);
 
         // when next is click then do the following
         View.OnClickListener listener = new View.OnClickListener() {
@@ -142,7 +140,19 @@ public class FragmentTop extends Fragment {
                 mNext.setTextColor(color);
             }
         };
-        mNext.setOnClickListener(listener); */
+        mNext.setOnClickListener(listener);
+
+/*        final ImageView changeImage = (ImageView) view.findViewById(R.id.imagechange);
+        changeImage.setImageResource(R.drawable.cardigan_no_interno);
+
+        Button buttonNext = (Button) view.findViewById(R.id.color_background_next);
+        buttonNext.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeImage.setImageResource(R.drawable.apricot);
+            }
+        } ); */
+
 
         return view;
     }

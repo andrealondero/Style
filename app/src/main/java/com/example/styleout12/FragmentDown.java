@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -22,6 +25,11 @@ public class FragmentDown extends Fragment {
     View dView;
     private RecyclerView myRecyclerViewDown;
     private List<Down> lstDown;
+
+    private BackgroundColorChanger mColor = new BackgroundColorChanger();
+    // Declare our View variables
+    private Button mNext;
+    private LinearLayout mLayout;
 
     public static final String[] titles = new String[] {"Apricot", "AshGray", "Azure", "Beige", "Black", "Blue", "BlueGray", "BlueJeans",
             "BottleGreen", "Celeste", "Coral", "DarkGreen", "Gold", "Gray", "Green",
@@ -46,6 +54,8 @@ public class FragmentDown extends Fragment {
 
     Spinner fabricSelect;
 
+    ImageView changeImage;
+    Button buttonNext;
 
     public FragmentDown() {
     }
@@ -114,6 +124,23 @@ public class FragmentDown extends Fragment {
 
             }
         } );
+
+        // ID
+        mNext = (Button) dView.findViewById(R.id.color_background_next);
+        mLayout = (LinearLayout) dView.findViewById(R.id.provabackground);
+
+        // when next is click then do the following
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int color = mColor.getColor();
+
+                //Update the screen with a color
+                mLayout.setBackgroundColor(color);
+                mNext.setTextColor(color);
+            }
+        };
+        mNext.setOnClickListener(listener);
 
         return dView;
 

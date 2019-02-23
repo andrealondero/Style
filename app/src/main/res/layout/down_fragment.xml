@@ -10,14 +10,14 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/down_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="120dp">
+        android:layout_height="90dp">
     </android.support.v7.widget.RecyclerView>
 
     <View
         android:id="@+id/divider1"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="90dp"
         android:background="?android:attr/listDivider" />
 
     <TextView
@@ -27,12 +27,12 @@
         android:textStyle="bold"
         android:text="COLOR"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="135dp" />
+        android:layout_marginTop="110dp" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="122dp"
+        android:layout_marginTop="97dp"
         android:layout_marginLeft="80dp"
         android:id="@+id/downspinner">
     </Spinner>
@@ -44,12 +44,12 @@
         android:textStyle="bold"
         android:text="COLOR"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="170dp" />
+        android:layout_marginTop="145dp" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="141dp"
         android:layout_marginLeft="80dp"
         android:id="@+id/fabricdownselect">
     </Spinner>
@@ -58,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="215dp"
+        android:layout_marginTop="179dp"
         android:button="@drawable/checkboxusual"
         android:src="@drawable/usualbutton" />
 
@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="105dp"
-        android:layout_marginTop="214dp"
+        android:layout_marginTop="178dp"
         android:button="@drawable/checkboxcasual"
         android:src="@drawable/casualbutton" />
 
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="280dp"
-        android:layout_marginTop="213dp"
+        android:layout_marginTop="178dp"
         android:button="@drawable/checkboxformal"
         android:src="@drawable/formalbutton" />
 
@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="195dp"
-        android:layout_marginTop="214dp"
+        android:layout_marginTop="179dp"
         android:button="@drawable/checkboxelegant"
         android:src="@drawable/elegantbutton" />
 
@@ -90,15 +90,31 @@
         android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="230dp"
         android:background="?android:attr/listDivider" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <LinearLayout
+        android:id="@+id/provabackground"
         android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_marginTop="230dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleX="1.18"
+            android:scaleY="1.18"
+            android:id="@+id/imagechange"
+            android:src="@drawable/cardigan_no_interno" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/color_background_next"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="270dp"
-        app:srcCompat="@drawable/ic_trauser2" />
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:translationY="440dp" />
 
     <CheckBox
         android:id="@+id/checkBox"

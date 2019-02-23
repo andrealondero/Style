@@ -9,21 +9,21 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/top_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="90dp">
     </android.support.v7.widget.RecyclerView>
 
     <View
         android:id="@+id/divider1"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="90dp"
         android:background="?android:attr/listDivider" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="110dp"
         android:fontFamily="@font/architects_daughter"
         android:textStyle="bold"
         android:text="COLOR" />
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="102dp">
+        android:layout_marginTop="97dp">
     </Spinner>
 
     <TextView
@@ -43,7 +43,7 @@
         android:fontFamily="@font/architects_daughter"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="145dp"
         android:text="FABRIC" />
 
     <Spinner
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="145dp">
+        android:layout_marginTop="141dp">
     </Spinner>
 
     <CheckBox
@@ -95,13 +95,16 @@
 
     <LinearLayout
         android:id="@+id/provabackground"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_marginTop="230dp">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="155dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleX="1.18"
+            android:scaleY="1.18"
+            android:id="@+id/imagechange"
             android:src="@drawable/cardigan_no_interno" />
     </LinearLayout>
 
