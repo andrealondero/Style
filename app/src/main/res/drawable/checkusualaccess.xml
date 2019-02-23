@@ -4,7 +4,7 @@
         android:drawable="@drawable/usual"
         android:state_checked="false"/>
     <item
-        android:drawable="@drawable/usual_green"
+        android:drawable="@drawable/usual_green_access"
         android:state_checked="true"/>
     <item
         android:drawable="@drawable/usual"/>

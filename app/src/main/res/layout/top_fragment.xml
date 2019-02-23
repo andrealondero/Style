@@ -1,60 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:background="@drawable/gradient_red_white">
+    android:background="@drawable/gradient_violet_grey"
+    android:orientation="horizontal">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/top_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="120dp">
+        android:layout_height="100dp">
     </android.support.v7.widget.RecyclerView>
 
     <View
         android:id="@+id/divider1"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:background="?android:attr/listDivider" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="135dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/architects_daughter"
+        android:textStyle="bold"
         android:text="COLOR" />
 
     <Spinner
+        android:id="@+id/topspinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:gravity="center_vertical"
         android:layout_marginLeft="80dp"
-        android:id="@+id/topspinner">
+        android:layout_marginTop="102dp">
     </Spinner>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="COLOR"
+        android:fontFamily="@font/architects_daughter"
+        android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="170dp" />
+        android:layout_marginTop="150dp"
+        android:text="FABRIC" />
 
     <Spinner
+        android:id="@+id/fabrictopselect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
         android:layout_marginLeft="80dp"
-        android:id="@+id/fabrictopselect">
+        android:layout_marginTop="145dp">
     </Spinner>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="215dp"
+        android:layout_marginTop="180dp"
         android:button="@drawable/checkboxusual"
         android:src="@drawable/usualbutton" />
 
@@ -62,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="105dp"
-        android:layout_marginTop="214dp"
+        android:layout_marginTop="179dp"
         android:button="@drawable/checkboxcasual"
         android:src="@drawable/casualbutton" />
 
@@ -70,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="280dp"
-        android:layout_marginTop="213dp"
+        android:layout_marginTop="178dp"
         android:button="@drawable/checkboxformal"
         android:src="@drawable/formalbutton" />
 
@@ -78,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="195dp"
-        android:layout_marginTop="214dp"
+        android:layout_marginTop="179dp"
         android:button="@drawable/checkboxelegant"
         android:src="@drawable/elegantbutton" />
 
@@ -86,7 +90,7 @@
         android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="230dp"
         android:background="?android:attr/listDivider" />
 
     <LinearLayout
@@ -94,30 +98,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/cardigan_medio"
-        android:layout_marginTop="320dp"
-        android:scaleX="2"
-        android:scaleY="2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:src="@drawable/cardigan_no_interno" />
     </LinearLayout>
 
     <Button
         android:id="@+id/color_background_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="Next"
-        android:translationY="430dp"
-        android:layout_centerHorizontal="true" />
-
+        android:translationY="440dp" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="490dp"
         android:text="ADD" />
 
 </RelativeLayout>

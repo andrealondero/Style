@@ -4,7 +4,7 @@
         android:drawable="@drawable/elegant"
         android:state_checked="false"/>
     <item
-        android:drawable="@drawable/elegant_green"
+        android:drawable="@drawable/elegant_green_access"
         android:state_checked="true"/>
     <item
         android:drawable="@drawable/elegant"/>

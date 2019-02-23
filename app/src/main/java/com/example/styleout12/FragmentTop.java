@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -56,6 +57,8 @@ public class FragmentTop extends Fragment {
     Spinner spinner;
     List<RowItem> rowItems;
 
+    Spinner fabricSelect;
+
     public FragmentTop() {
     }
 
@@ -94,10 +97,38 @@ public class FragmentTop extends Fragment {
             }
         } );
 
+        fabricSelect = (Spinner) view.findViewById(R.id.fabrictopselect);
+        List<String> list = new ArrayList<>();
+        // lightweight fabrics
+        list.add("Cotton"); list.add("Silk");
+        // mesh fabrics
+        list.add("Cape"); list.add("Lace"); list.add("Tarlatan");
+        // medium weight fabrics
+        list.add("Cashmere"); list.add("Crepe");list.add("Flannel"); list.add("Poplin"); list.add("RawSilk"); list.add("Sateen");
+        // piled fabrics
+        list.add("BrushDenim");list.add("Fur"); list.add("Microfiber"); list.add("Suede"); list.add("Velvet");
+        // heavy weight fabrics
+        list.add("Canvas"); list.add("Denim"); list.add("Tartan"); list.add("Upholstery");
+        // Shiny glossy fabrics
+        list.add("Satin"); list.add("Silk"); list.add("PolishedCotton");
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, list);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        fabricSelect.setAdapter(adapter1);
+        fabricSelect.setOnItemSelectedListener( new AdapterView.OnItemSelectedListener() {
 
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String itemvalue = parent.getItemAtPosition(position).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        } );
 
 /*        // ID
-        mNext = (Button) mNext.findViewById(R.id.color_background_next);
+        mNext = (Button) view.findViewById(R.id.color_background_next);
         mLayout = (LinearLayout) mLayout.findViewById(R.id.provabackground);
 
         // when next is click then do the following
@@ -112,8 +143,6 @@ public class FragmentTop extends Fragment {
             }
         };
         mNext.setOnClickListener(listener); */
-
-
 
         return view;
     }

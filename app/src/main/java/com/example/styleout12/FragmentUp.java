@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
@@ -47,6 +48,9 @@ public class FragmentUp extends Fragment {
     Spinner spinner;
     List<RowItem> rowItems;
 
+    Spinner fabricSelect;
+
+
     public FragmentUp() {
     }
 
@@ -77,6 +81,36 @@ public class FragmentUp extends Fragment {
 
                 String itemvalue = parent.getItemAtPosition( position ).toString();
                 Toast.makeText( getActivity(), "SELECTED" + itemvalue, Toast.LENGTH_SHORT ).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        } );
+
+        fabricSelect = (Spinner) uView.findViewById(R.id.fabricupselect);
+        List<String> list = new ArrayList<>();
+        // lightweight fabrics
+        list.add("Cotton"); list.add("Silk");
+        // mesh fabrics
+        list.add("Cape"); list.add("Lace"); list.add("Tarlatan");
+        // medium weight fabrics
+        list.add("Cashmere"); list.add("Crepe");list.add("Flannel"); list.add("Poplin"); list.add("RawSilk"); list.add("Sateen");
+        // piled fabrics
+        list.add("BrushDenim");list.add("Fur"); list.add("Microfiber"); list.add("Suede"); list.add("Velvet");
+        // heavy weight fabrics
+        list.add("Canvas"); list.add("Denim"); list.add("Tartan"); list.add("Upholstery");
+        // Shiny glossy fabrics
+        list.add("Satin"); list.add("Silk"); list.add("PolishedCotton");
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, list);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        fabricSelect.setAdapter(adapter1);
+        fabricSelect.setOnItemSelectedListener( new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String itemvalue = parent.getItemAtPosition(position).toString();
             }
 
             @Override
